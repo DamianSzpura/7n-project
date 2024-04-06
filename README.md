@@ -1,27 +1,12 @@
 # 7nProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+Only for review purposes.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Goals: 
+- [x] Create and share a public repository on GitHub, Bitbucket, etc.
+- [x] Push the final source code to the master branch.
+- [x] Create an Angular project using version 15+ and include all plugins that help you in your daily coding.
+- [x] Create an application with lazy loading modules.
+- [x] Create a simple communication layer between the application and the lazy loaded module.
+- [x] Dynamically register additional routes inside the lazy loading module when it is initialized.
+- [x] Pass some values through the communication layer to the lazy loaded component.
