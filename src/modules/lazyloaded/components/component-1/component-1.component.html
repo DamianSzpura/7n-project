@@ -1,1 +1,6 @@
-<p>component-1 works!</p>
+<p>component-1 works! (its only in first lazy loaded module)</p>
+
+<div class="flex gap-2">
+    <input type="text" pInputText [(ngModel)]="titleInputText" />
+    <p-button label="Submit new title" (onClick)="onSubmit()"></p-button>
+</div>

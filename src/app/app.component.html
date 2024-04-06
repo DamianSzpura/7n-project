@@ -1,3 +1,16 @@
-<div class="flex justify-content-center align-items-center" style="min-height: 500px; min-width: 100%">
+<div class="flex flex-column gap-6 justify-content-center align-items-center" style="min-height: 500px; min-width: 100%">
+  <h2 class="flex gap-4 align-items-center"> {{title$ | async}} <p-button size="small" icon="pi pi-times" [rounded]="true" severity="danger" (onClick)="onResetTitle()"></p-button></h2>
+
+
+<div class="pb-3">
   <router-outlet />
+</div>
+
+  <div class="flex flex-column gap-2">
+    <p-button label="Load main page" (onClick)="onChangePage('./')"></p-button>
+    <p-button label="Change page to lazy loaded component" (onClick)="onChangePage('./lazyloaded-component')"></p-button>
+    <p-button label="Change page to lazy loaded module [component 1]" (onClick)="onChangePage('./lazyloaded-module')"></p-button>
+    <p-button label="Change page to lazy loaded module with dynamic routes [component 2]" (onClick)="onChangePage('./lazyloaded-module-with-dynamic-routes')"></p-button>
+    <p-button label="Change page to lazy loaded module with dynamic routes [component 1][dynamic route]" (onClick)="onChangePage('./lazyloaded-module-with-dynamic-routes/lazyloaded-module')"></p-button>
+  </div>
 </div>
